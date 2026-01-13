@@ -1,11 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <title>WT sample Lab</title>
+
+    <base href="https://www.example.com/" target="_blank">
+   
+    <link rel="stylesheet" href="style.css">
+
     
+    <style type="text/css" media="screen" scoped>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f5f5;
+        }
+    </style>
+
+    <script charset="UTF-8" src="script.js"></script>
+
+
+</head>
+
+<body>
+    <h1 style="text-align: center;"> Explore various Html5 tags</h1>
+
+    <main>
+
+        <hgroup>
+            <h1>HTML Elements Demo</h1>
+            <h2>Text, Media, Lists, Tables, Graphics</h2>
+        </hgroup>
+
+        <hr>
+
+        <p>
+            This is <b>bold text</b>, <i>italic text</i>, <strong>strong text</strong>, and <em>emphasized text .</em>
+
+        </p>
+        <p>
+            Chemical formula: H <sub>2</sub>0 <br>
+            Mathematical power:10 <sup>2</sup>
+        </p>
+        <p>
+            Line break example <br>
+            Word break opportunity <wbr>Here</wbr>
+        </p>
+
+        <hr>
+
+        <h2>Lists</h2>
+        <h3>Unordered List</h3>
+        <ul>
+            <li>Html</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+
+        </ul>
+        <h3>Ordered List</h3>
+        <ol>
+            <li>Design</li>
+            <li>Develop</li>
+            <li>Deploy</li>
+
+        </ol>
+
+        <hr>
+        <h2>Code and Output</h2>
+        <p>Inline code: <code style="background-color: rgb(255, 255, 255);">console.log("Hello World");</code></p>
+
+        <pre>
+            function greet(){
+                return "Hello!"
+            }
+        </pre>
+
+        <p>Program Output: <output>Hello!</output></p>
+
+        <hr>
+        <h2>Deleted and Inserted Text </h2>
+        <p>
+            Old price: <del>$500</del><br>
+            New price: <ins>$600</ins><br>
+        </p>
+
+        <hr>
+        <h2>Quotes</h2>
+        <p>
+            Short quote: <q>Learning HTML is fun.</q>
+        </p>
+        <blockquote>
+            HTML is the standard markup language for creating web pages.
+        </blockquote>
+        <h2>Table</h2>
+        <table style="border: solid black 2px;">
+            <tr>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Grade</th>
+            </tr>
+            <tr>
+                <td>Alice</td>
+                <td>HTML</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>akshata</td>
+                <td>JavaScript</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>Anoushka</td>
+                <td>Figma</td>
+                <td>B</td>
+            </tr>
+        </table>
+
+        <hr>
+        <h2>Image</h2>
+        <img src="https://via.placeholder.com/150" alt="sample img">
+        <hr>
+        <h2>Audio</h2>
+
+        <audio controls>
+            <source src="sample-audio.mp3" type="audi/mpeg">
+            Your browser does not support audio.
+        </audio>
+
+        <h2>Video</h2>
+        <video width="320" height="240" controls>
+            <source src="sample-video.mp4" type="video.mp4">
+            Your browser does not support video.
+
+        </video>
+
+        <h2>Link</h2>
+
+        <a href="google.com">Click Here!</a>
+        <hr>
+        <h2>Datalist (Input List)</h2>
+
+        <input list="language" name="language" type="text">
+        <datalist id="languages">
+            <option value="HTML">HTML</option>
+            <option value="CSS"></option>
+            <option value="JS"></option>
+            <option value="PYTHON"></option>
+        </datalist>
+        <hr>
+        <h2>Meter</h2>
+        <p>Task completion</p>
+        <meter value="0.7">70%</meter>
+
+
+        <hr>
+        <h2>Figure and Figcaption</h2>
+        <figure>
+            <img src="https://via.placeholder.com/150" alt="sample img">
+            <figcaption>Figure 1: Sample placeholder image</figcaption>
+        </figure>
+        <hr>
+        <h2>
+            SVG Graphic
+        </h2>
+        <svg width="200" height="100" style="border:1px solid black">
+           
+            <rect x="10" y="10" width="80" height="50" fill="blue" />
+            
+            <circle cx="150" cy="35" r="25" fill="red" />
+        </svg>
+
+        <hr>
+        <h2>
+            Canvas
+        </h2>
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid black"></canvas>
+
+        <script>
+            const canvas = document.getElementById('myCanvas');
+            const ctx = canvas.getContext('2d');
+            ctx.fillStyle = "red";
+            ctx.fillRect(10, 10, 180, 80);
+        </script>
+
+    </main>
 </body>
+
 </html>
